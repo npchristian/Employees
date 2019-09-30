@@ -1,0 +1,22 @@
+Target: Driver.class Employee.class Pharmacy_manager.class Senior_technician.class Staff_pharmacist.class Staff_technician.class
+
+Driver.class:Driver.java
+	javac Driver.java
+	
+Employee.class:Employee.java
+	javac Employee.java
+	
+Pharmacy_manager.class:Pharmacy_manager.java
+	javac Pharmacy_manager.java
+
+Senior_technician.class:Senior_technician.java
+	javac Senior_technician.java
+	
+Staff_pharmacist.class:Staff_pharmacist.java
+	javac Staff_pharmacist.java
+	
+Staff_technician.class:Staff_technician.java
+	javac Staff_technician.java
+	
+clean:
+	$(RM) *.class
