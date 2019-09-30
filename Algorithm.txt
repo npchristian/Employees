@@ -1,0 +1,69 @@
+
+1. Create a class called Employees.java which will include:
+	a. A protected integer to store the employee ID
+	b. two protected strings (first name and last name)
+	c. Three protected doubles to store the total pay, hours worked, and overtime pay
+	d. Create a method that accepts a double (hours worked) and prints the total pay based on hours worked (including overtime)
+
+2. Create a class called Staff_Pharmacist which will extend the Employee class and include:
+	a. a protected boolean called licensed which will be equal to true
+	b. a public constructor called Staff_Pharmacist which will accept an array of strings as an argument
+		i. Set ID (inherited from Employee class) equal to the element stored at 1 in the string array 
+		ii. Set first name (inherited from employee class) equal to the element stored at 2 in the string array
+		iii. set last name (inherited from the employee class) equal to the element stored at 3 in the string array
+		iv. Set the hourly rate (inherited from employee class) equal to 40.
+	c. a public method to print the data (ID, first name, last name, hourly rate, and booleans
+
+3. Create a class called Pharmacy_Manager which will extend the Staff_Pharmacist class and include:
+	a.a private boolean called leadership which will equal true
+	b. A public constructor called Pharmacy_Manager which will
+		i. accept a string array as an argument
+		ii. call the base constructor (inherited from staff pharmacist) and pass the entire string array
+		iii. set hourly rate (inherited from staff pharmacist) equal to 50
+	c. a public method to print the data (ID, first name, last name, hourly rate, and booleans
+
+4. Create a class called Staff_technician which will extend the employee class and include:
+	a. one protected boolean called degree which will equal true
+	b. one constructor which will accept a string array as an argument and:
+		i. set ID (inherited from main) equal to the element stored at 1
+		ii. set first name (inherited from employee) equal to the element stored at 2
+		iii. set the last name (inherited from employee) equal to the element stored at 3
+		iv. set the hourly rate (inherited from employee) equal to 20;
+	c. a public method to print the data (ID, first name, last name, hourly rate, and booleans
+
+5. Create a class called Senior_technician which will extend the staff_technician and include:
+	a. a private boolean called service_award which will equal true
+	b. A public constructor called Senior_Techncian which will
+		i. accept a string array as an argument
+		ii. call the base constructor (inherited from staff_technician and pass the entire string array
+		iii. set hourly rate (inherited from staff_technician) equal to 25
+	c. a public method to print the data (ID, first name, last name, hourly rate, and booleans
+
+6. Create a Driver class which will:
+	a. Give the user an option to select:
+		a. load employees from file
+		b. exit
+	b. if user selects exit -> do a system exit
+	c. If user selects load
+
+		i. read the employees.txt file to determine
+			1. how many employees are in the file
+			2. how many of each type (role 1, role 2, etc..)
+		ii. Store the employees in string arrays
+		iii. Tokenize the arrays using commas as seperators
+		iv. store the new comma-seperated arrays into a temporary string array
+		v. pass that temporary strnig array to a class of employees based on the role
+			1. EXAMPLE: If the role is 4, pass that string array to the Senior_technician class and create a Senior_technician
+		vi. close the file
+	d. Give the user a second option to:
+		i. print employee info
+		ii. Enter the hours worked (for all employees)
+		iii. calculate paychecks 
+		iv. exit the program
+	f. If user selects print employee info Use a for loop from 0 (zero) to the number of employees to print all employees using the print data method 
+	g. If user selects enter hours worked
+		i. prompt user to enter hours worked
+		iii. Use an if statement to ensure user enters hours worked before calculating pay
+	h. If the user selects calculate paychecks call the print pay method (in employee) and pass hours worked
+	i. if user selects exit, allow the program to exit the loop, print "Goodbye" and terminate. 
+	
